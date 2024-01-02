@@ -2,6 +2,7 @@ import React from 'react'
 import './header.css'
 import Youtube_logo from '../Images/youtube.png'
 import ProfileLogo from '../Images/profilePic.jpg'
+import { useNavigate as UseNavigate } from 'react-router-dom'
 
 import { IoMenu } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
@@ -11,6 +12,13 @@ import { FaBell } from "react-icons/fa";
 //import { FaRegCircle } from "react-icons/fa";
 
 function header() {
+
+  const navigate = UseNavigate();
+
+  const sendRequest = () => {
+    navigate('/search');
+  };
+
   return (
     <div className='youtube__header'>
       <div className='header_left'>
@@ -19,7 +27,7 @@ function header() {
       </div>
       <div className='header_moddle'>
         <input type='text' placeholder='Search' className='header_search' />
-        <button className='btn-header'>
+        <button className='btn-header' onClick={sendRequest}>
           <CiSearch className='header_search_icon'/>
         </button>
       </div>
