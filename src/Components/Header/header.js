@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState as UseState} from 'react'
 import './header.css'
 import Youtube_logo from '../Images/youtube.png'
 import ProfileLogo from '../Images/profilePic.jpg'
@@ -13,10 +13,15 @@ import { FaBell } from "react-icons/fa";
 
 function header() {
 
+  const [inputSearch , setInputSearch] = UseState('');
+
   const navigate = UseNavigate();
 
   const sendRequest = () => {
-    navigate('/search');
+    // navigate('/search');
+    if(inputSearch){
+      navigate('/search');
+    }
   };
 
   return (
@@ -26,7 +31,7 @@ function header() {
         <img src={Youtube_logo} alt='' className='header__yt_icon' />
       </div>
       <div className='header_moddle'>
-        <input type='text' placeholder='Search' className='header_search' />
+        <input onChange={(e) =>setInputSearch(e.target.value)} value={inputSearch} type='text' placeholder='Search' className='header_search' />
         <button className='btn-header' onClick={sendRequest}>
           <CiSearch className='header_search_icon'/>
         </button>
