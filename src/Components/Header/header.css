@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.youtube__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    height: 5rem;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.header_menu{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.header__yt_icon{
+    height: 45px; 
+    margin-left: 25px; 
+}
+
+.header_moddle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.922);
+}
+
+.header_search{
+    width: 75%;
+    height: 80%;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.btn-header{
+    height: 40px;
+    border: none;
+    border-left: 1px solid black;
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+.header_search_icon{
+    width: 4rem;
+    font-size: 25px;
+    cursor: pointer;    
+}
+
+
+
+.header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    padding: 0 16px;
+    font-size: 1.5rem;    
+}
+
+.profile_icon{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
