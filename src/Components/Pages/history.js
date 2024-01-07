@@ -1,16 +1,16 @@
 import React from 'react'
+import '../pagescss/history.css';
 //import Sidebar from '../Sidebar/sidebar';
-import Content from '../Maincontaint/containt';
 
-function route() {
+function history() {
   return (
     <div className=''>
       <div className=''>
         {/* <Sidebar /> */}
-        <Content /> 
+        <h1>History</h1>
       </div>
     </div>
   )
 }
 
-export default route
+export default history

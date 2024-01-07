@@ -1,10 +1,14 @@
 import React from 'react'
-
+import Sidebar from '../Sidebar/sidebar';
+import SearchPage from './searchPage'
 
 function search() {
   return (
-    <div>
-      <h1>This is the result after clicked on search button.</h1>
+    <div className='App'>
+      <div className='App_Page'>
+        <Sidebar />
+        <SearchPage /> 
+      </div>
     </div>
   )
 }

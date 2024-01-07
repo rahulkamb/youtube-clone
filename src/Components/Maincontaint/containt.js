@@ -3,7 +3,7 @@ import './containt.css'
 import VideoCard from '../Maincontaint/videoCard';
 
 import ProfileLogo from '../Images/profilePic.jpg'
-//image ,avtar,title,channelName,views,timeStamp
+
 function containt() {
   return (
     <div className='content'>

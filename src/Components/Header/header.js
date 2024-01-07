@@ -2,7 +2,7 @@ import React , {useState as UseState} from 'react'
 import './header.css'
 import Youtube_logo from '../Images/youtube.png'
 import ProfileLogo from '../Images/profilePic.jpg'
-import { useNavigate as UseNavigate } from 'react-router-dom'
+import { useNavigate as UseNavigate , Link } from 'react-router-dom'
 
 import { IoMenu } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
@@ -17,10 +17,10 @@ function header() {
 
   const navigate = UseNavigate();
 
-  const sendRequest = () => {
+  const sendRequest =()=> {
     // navigate('/search');
     if(inputSearch){
-      navigate('/search');
+      navigate('/');
     }
   };
 
@@ -28,13 +28,18 @@ function header() {
     <div className='youtube__header'>
       <div className='header_left'>
         <IoMenu className='header_menu'/>
-        <img src={Youtube_logo} alt='' className='header__yt_icon' />
+        <Link to={'/'}>
+          <img src={Youtube_logo} alt='' className='header__yt_icon'  />
+        </Link>
       </div>
       <div className='header_moddle'>
-        <input onChange={(e) =>setInputSearch(e.target.value)} value={inputSearch} type='text' placeholder='Search' className='header_search' />
-        <button className='btn-header' onClick={sendRequest}>
-          <CiSearch className='header_search_icon'/>
-        </button>
+        <input onChange={(e) =>setInputSearch(e.target.value)} value={inputSearch} type='text' placeholder='Search' className='header_search' required />
+        <Link to={`/search/${inputSearch}`}> 
+          <CiSearch className='header_search_icon' onClick={sendRequest}/>
+        </Link>
+          {/* <button className='btn-header' onClick={sendRequest}>
+            <CiSearch className='header_search_icon'/>
+          </button> */}
       </div>
       <div className='header_right'>
         <MdVideoCall />

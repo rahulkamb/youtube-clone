@@ -26,6 +26,7 @@
 }
 
 .header__yt_icon{
+    cursor: pointer;
     height: 45px; 
     margin-left: 25px; 
 }
