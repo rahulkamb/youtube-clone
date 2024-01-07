@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link } from 'react-router-dom'
 import './sidebar.css'
 import Siderow from './siderow'
 import { IoHomeOutline } from "react-icons/io5";
@@ -10,21 +11,37 @@ import { MdOutlineSubscriptions ,MdOutlineWatchLater,MdVideoLibrary } from "reac
 
 
 
-
-
 function sidebar() {
   return (
     <div className='sidebar'>
-        <Siderow selected Icon={IoHomeOutline} title='Home' />
-        <Siderow Icon={BsFire} title='Trending' />
-        <Siderow Icon={MdOutlineSubscriptions} title='Subscription' />
+        <Link to='/' className='text-link' >
+          <Siderow selected Icon={IoHomeOutline} title='Home' />
+        </Link>
+        <Link to='/trending' className='text-link'>
+          <Siderow Icon={BsFire} title='Trending' />
+        </Link>
+        <Link to='/subscription' className='text-link'>
+          <Siderow Icon={MdOutlineSubscriptions} title='Subscription' />
+        </Link>
         <hr />
-        <Siderow Icon={MdVideoLibrary} title='Library' />
-        <Siderow Icon={MdOutlineWatchLater} title='History' />
-        <Siderow Icon={MdVideoLibrary} title='Your video' />
-        <Siderow Icon={GiStopwatch} title='Watch later' />
-        <Siderow Icon={BiLike} title='Liked video' />
-        <Siderow Icon={RiArrowDropDownLine} title='Show More' />
+        <Link to='/library' className='text-link'>
+          <Siderow Icon={MdVideoLibrary} title='Library' />
+        </Link>
+        <Link to='/history' className='text-link'>
+          <Siderow Icon={MdOutlineWatchLater} title='History' />
+        </Link>
+        <Link to='/library' className='text-link'>
+          <Siderow Icon={MdVideoLibrary} title='Your video' />
+        </Link>
+        <Link to='/watchLater' className='text-link'>
+          <Siderow Icon={GiStopwatch} title='Watch later' />
+        </Link>
+        <Link to='/watchLater' className='text-link'>
+          <Siderow Icon={BiLike} title='Liked video' />
+        </Link>
+        <Link to='/watchLater' className='text-link'>
+          <Siderow Icon={RiArrowDropDownLine} title='Show More' />
+        </Link>
         <hr />
     </div>
   )

@@ -9,3 +9,7 @@
     background-color: lightgray;
     margin: 10px 16px;
 }
+
+.text-link{
+    text-decoration: none;
+}
