@@ -1,5 +1,16 @@
-.sidebar {
-    flex: 0.15;
+.sidebarOpen{
+    /* flex: 0.8; */
+    width: 14rem;
+    margin-top: 5rem;
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+}
+
+
+.sidebarClose{
+    /* flex: 0.15; */
+    width: 5rem;
     margin-top: 5rem;
     position: fixed;
     background-color: white;

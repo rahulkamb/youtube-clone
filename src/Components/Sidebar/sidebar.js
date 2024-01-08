@@ -11,38 +11,45 @@ import { MdOutlineSubscriptions ,MdOutlineWatchLater,MdVideoLibrary } from "reac
 
 
 
-function sidebar() {
+function sidebar({isSidebarOpen}) {
   return (
-    <div className='sidebar'>
+    <div className={`sidebar${isSidebarOpen?'Open':'Close'}`} >
         <Link to='/' className='text-link' >
-          <Siderow selected Icon={IoHomeOutline} title='Home' />
+          <Siderow selected Icon={IoHomeOutline} title='Home' isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/trending' className='text-link'>
-          <Siderow Icon={BsFire} title='Trending' />
+          <Siderow Icon={BsFire} title='Trending' isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/subscription' className='text-link'>
-          <Siderow Icon={MdOutlineSubscriptions} title='Subscription' />
+          <Siderow Icon={MdOutlineSubscriptions} title='Subscription' isIconVisible={isSidebarOpen} />
         </Link>
-        <hr />
+        
+        <hr style={{display:isSidebarOpen?'block':'none'}}/>
+        
+
         <Link to='/library' className='text-link'>
-          <Siderow Icon={MdVideoLibrary} title='Library' />
+          <Siderow Icon={MdVideoLibrary} title='Library'  isIconVisible={isSidebarOpen}/>
         </Link>
         <Link to='/history' className='text-link'>
-          <Siderow Icon={MdOutlineWatchLater} title='History' />
+          <Siderow Icon={MdOutlineWatchLater} title='History'  isIconVisible={isSidebarOpen}/>
         </Link>
         <Link to='/library' className='text-link'>
-          <Siderow Icon={MdVideoLibrary} title='Your video' />
+          <Siderow Icon={MdVideoLibrary} title='Your video' isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/watchLater' className='text-link'>
-          <Siderow Icon={GiStopwatch} title='Watch later' />
+          <Siderow Icon={GiStopwatch} title='Watch later' isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/watchLater' className='text-link'>
-          <Siderow Icon={BiLike} title='Liked video' />
+          <Siderow Icon={BiLike} title='Liked video'  isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/watchLater' className='text-link'>
-          <Siderow Icon={RiArrowDropDownLine} title='Show More' />
+          <Siderow Icon={RiArrowDropDownLine} title='Show More' isIconVisible={isSidebarOpen} />
         </Link>
-        <hr />
+
+        <br></br>
+        <hr style={{display:isSidebarOpen?'block':'none'} } />
+        <br></br>
+
     </div>
   )
 }

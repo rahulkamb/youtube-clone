@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header/header';
@@ -12,13 +13,20 @@ import Trending from './Components/Pages/trending';
 import WatchLater from './Components/Pages/watchLater';
 
 function App() {
+
+  const [isOpen , setIsOpen] = useState(true);
+
+  const toggleSidebar = () =>{    
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className=''>
       <div className=''>
         <Router>
-          <Header />
+          <Header toggleSidebar={toggleSidebar} />
           <div className='App_Page'>
-            <Sidebar className='sidebar_menu' />
+            <Sidebar className='sidebar_menu' isSidebarOpen={isOpen} />
             <Routes>
               <Route path='/' element={<RoutePage />} />
                 <Route path='/search/:searchTerm' element={<Search />} />

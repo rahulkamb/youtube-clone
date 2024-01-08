@@ -4,7 +4,15 @@
     padding: 10px 16px;
 }
 
-.siderow_icon{
+.sideOpen_icon{
+    align-items: center;
+    padding-left: 10px;
+    height: 100%;
+    font-size: 25px;
+    color: #606060;
+}
+
+.sideClose_icon{    
     align-items: center;
     padding-left: 10px;
     height: 100%;
@@ -25,7 +33,11 @@
     cursor: pointer;
 }
 
-.siderow_element:hover .siderow_icon{
+.siderow_element:hover .sideOpen_icon{
+    color: red;
+}
+
+.siderow_element:hover .sideClose_icon{
     color: red;
 }
 
@@ -40,7 +52,11 @@
     border-radius: 15px;
 }
 
-.siderow_element.selected > .siderow_icon{
+.siderow_element.selected > .sideOpen_icon{
+    color: red;
+}
+
+.siderow_element.selected > .sideClose_icon{
     color: red;
 }
 

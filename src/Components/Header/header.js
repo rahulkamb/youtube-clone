@@ -11,14 +11,13 @@ import { CgMenuGridR } from "react-icons/cg";
 import { FaBell } from "react-icons/fa";
 //import { FaRegCircle } from "react-icons/fa";
 
-function header() {
+function header({toggleSidebar}) {
 
   const [inputSearch , setInputSearch] = UseState('');
 
   const navigate = UseNavigate();
 
   const sendRequest =()=> {
-    // navigate('/search');
     if(inputSearch){
       navigate('/');
     }
@@ -27,7 +26,7 @@ function header() {
   return (
     <div className='youtube__header'>
       <div className='header_left'>
-        <IoMenu className='header_menu'/>
+        <IoMenu className='header_menu' onClick={toggleSidebar}/>
         <Link to={'/'}>
           <img src={Youtube_logo} alt='' className='header__yt_icon'  />
         </Link>

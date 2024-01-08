@@ -72,7 +72,8 @@
 .header_search_icon{
     width: 4rem;
     font-size: 25px;
-    cursor: pointer;    
+    cursor: pointer;   
+    color: black; 
 }
 
 
@@ -95,7 +96,7 @@
 }
 
 .header_icon{
-    /* width: 5%; */
+    width: 11%;
     padding: 10px;
 }
 
