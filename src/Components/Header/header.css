@@ -22,9 +22,16 @@
 }
 
 .header_menu{
+    padding: 10px;
     cursor: pointer;
     font-size: 25px;
     padding-left: 10px;
+}
+
+.header_menu:hover{
+    background-color: lightgray;
+    border-radius: 50%;
+    color: red;
 }
 
 .header__yt_icon{
@@ -95,4 +102,5 @@
 .header_icon:hover{
     background-color: lightgray;
     border-radius: 50%;
+    color: red;
 }
