@@ -1,24 +1,50 @@
-.videoCard {
+.videoCardNonActive{
     width: 375px;
     margin-bottom: 40px;
     margin-right: 15px;
 
 }
 
-.videoCard_thumbnail{
+.videoCardActive{
+    width: 21.5%;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+.videoCard_thumbnailNonActive{
     width:375px;
     height: 211px;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.videoCard_content{
+.videoCard_thumbnailActive{
+    width:100%;
+    height: 211px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.videoCard_contentNonActive{
     display: flex;
     align-items: center;
 }
 
-.videoCard_icon{
-    
+.videoCard_contentActive{
+    display: flex;
+    align-items: center;
+}
+
+.videoCard_iconNonActive{    
+    vertical-align: middle;
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.videoCard_iconActive{    
     vertical-align: middle;
     width: 70px;
     height: 50px;

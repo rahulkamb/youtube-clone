@@ -4,10 +4,10 @@ import VideoCard from '../Maincontaint/videoCard';
 
 import ProfileLogo from '../Images/profilePic.jpg'
 
-function containt() {
+function containt({isContentOpen}) {
   return (
-    <div className='content'>
-        <VideoCard 
+    <div className={`content${isContentOpen?'NonActive':'Active'}`}>
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -16,7 +16,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -25,7 +25,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -34,7 +34,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -43,7 +43,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -52,7 +52,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -61,7 +61,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -70,7 +70,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -79,7 +79,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -88,7 +88,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -97,7 +97,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -106,7 +106,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -115,7 +115,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -124,7 +124,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -133,7 +133,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"
@@ -142,7 +142,7 @@ function containt() {
             timeStamp='Streamed 3 months ago'
         />
 
-        <VideoCard 
+        <VideoCard isContentOpen={isContentOpen}
             image='https://i.ytimg.com/vi/pUxrDcITyjg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC_Jda5dMekKZH-buTERFKi4kj5aw'
             avtar={ProfileLogo}
             title="😍 Let's Build a WhatsApp clone with REACT JS for Beginners!"

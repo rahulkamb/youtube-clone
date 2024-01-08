@@ -24,8 +24,9 @@ function sidebar({isSidebarOpen}) {
           <Siderow Icon={MdOutlineSubscriptions} title='Subscription' isIconVisible={isSidebarOpen} />
         </Link>
         
+        <br />
         <hr style={{display:isSidebarOpen?'block':'none'}}/>
-        
+        <br />
 
         <Link to='/library' className='text-link'>
           <Siderow Icon={MdVideoLibrary} title='Library'  isIconVisible={isSidebarOpen}/>
@@ -46,9 +47,9 @@ function sidebar({isSidebarOpen}) {
           <Siderow Icon={RiArrowDropDownLine} title='Show More' isIconVisible={isSidebarOpen} />
         </Link>
 
-        <br></br>
+        <br />
         <hr style={{display:isSidebarOpen?'block':'none'} } />
-        <br></br>
+        <br />
 
     </div>
   )

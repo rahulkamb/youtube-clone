@@ -3,14 +3,14 @@ import './videocard.css';
 
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 
-function videoCard({image ,avtar,title,channelName,views,timeStamp}) {
+function videoCard({isContentOpen,image ,avtar,title,channelName,views,timeStamp}) {
   return (
-    <div className='videoCard'>
-        <div >
-            <img className='videoCard_thumbnail' src={image} alt='Thumbnail' />
+    <div className={`videoCard${isContentOpen?'NonActive':'Active'}`}>
+        <div  >
+            <img className={`videoCard_thumbnail${isContentOpen?'NonActive':'Active'}`} src={image} alt='Thumbnail' />
         </div>
-        <div className='videoCard_content'>
-            <img src={avtar} alt='Profile_Pic' className='videoCard_icon' />
+        <div className={`videoCard_content${isContentOpen?'NonActive':'Active'}`}>
+            <img src={avtar} alt='Profile_Pic' className={`videoCard_icon${isContentOpen?'NonActive':'Active'}`} />
             <div className='videoCard_title'>
                 <h4>
                     {title}

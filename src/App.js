@@ -16,7 +16,8 @@ function App() {
 
   const [isOpen , setIsOpen] = useState(true);
 
-  const toggleSidebar = () =>{    
+  const toggleSidebar = () =>{  
+    console.log(isOpen);  
     setIsOpen(!isOpen);
   }
 
@@ -28,7 +29,7 @@ function App() {
           <div className='App_Page'>
             <Sidebar className='sidebar_menu' isSidebarOpen={isOpen} />
             <Routes>
-              <Route path='/' element={<RoutePage />} />
+              <Route path='/' element={<RoutePage isContentOpen={isOpen} />} />
                 <Route path='/search/:searchTerm' element={<Search />} />
                 <Route path='/history' element={<History />} />
                 <Route path='/library' element={<Library />} />
