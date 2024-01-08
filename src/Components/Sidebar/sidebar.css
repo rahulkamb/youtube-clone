@@ -1,7 +1,9 @@
 .sidebar {
     flex: 0.15;
     margin-top: 5rem;
-    
+    position: fixed;
+    background-color: white;
+    height: 100vh;
 }
 
 .sidebar>hr {
