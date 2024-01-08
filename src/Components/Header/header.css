@@ -8,8 +8,9 @@
     align-items: center;
     justify-content: space-between;   
     height: 5rem;
+    width: 100%;
     padding: 0 16px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
     background-color: white;
@@ -84,4 +85,14 @@
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.header_icon{
+    /* width: 5%; */
+    padding: 10px;
+}
+
+.header_icon:hover{
+    background-color: lightgray;
+    border-radius: 50%;
 }

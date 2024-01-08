@@ -42,9 +42,9 @@ function header() {
           </button> */}
       </div>
       <div className='header_right'>
-        <MdVideoCall />
-        <CgMenuGridR />
-        <FaBell />
+        <MdVideoCall className='header_icon' />
+        <CgMenuGridR className='header_icon' />
+        <FaBell className='header_icon' />
         <img src={ProfileLogo} alt='Profile_Pic' className='profile_icon' />
       </div>
     </div>
