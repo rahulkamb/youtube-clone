@@ -34,8 +34,8 @@ function sidebar({isSidebarOpen}) {
         <Link to='/history' className='text-link'>
           <Siderow Icon={MdOutlineWatchLater} title='History'  isIconVisible={isSidebarOpen}/>
         </Link>
-        <Link to='/library' className='text-link'>
-          <Siderow Icon={MdVideoLibrary} title='Your video' isIconVisible={isSidebarOpen} />
+        <Link to='/countergame' className='text-link'>
+          <Siderow Icon={MdVideoLibrary} title='Counter Game' isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/watchLater' className='text-link'>
           <Siderow Icon={GiStopwatch} title='Watch later' isIconVisible={isSidebarOpen} />

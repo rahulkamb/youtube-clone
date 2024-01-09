@@ -11,6 +11,7 @@ import Library from './Components/Pages/library';
 import Subscription from './Components/Pages/subscription';
 import Trending from './Components/Pages/trending';
 import WatchLater from './Components/Pages/watchLater';
+import CounterGame from './Components/Pages/CounterGame';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
                 <Route path='/subscription' element={<Subscription />} />
                 <Route path='/trending' element={<Trending />} />
                 <Route path='/watchLater' element={<WatchLater />} />
+                <Route path='/countergame' element={<CounterGame />}/>
             </Routes>
           </div>
         </Router>

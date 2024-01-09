@@ -1,0 +1,32 @@
+.counterGame_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    padding: 0 1rem;
+    width: 100%;
+    height: 25rem;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.counter_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counterButton{
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-right: 2rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+}

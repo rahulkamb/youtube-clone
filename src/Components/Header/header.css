@@ -54,8 +54,9 @@
     width: 75%;
     height: 80%;
     flex: 1;
-    padding: 10px;
+    padding: 11px;
     border: none;
+    border-right: 1px;
     font-size: 16px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
@@ -64,9 +65,10 @@
 .btn-header{
     height: 40px;
     border: none;
-    border-left: 1px solid black;
+    border-left: 0 solid black;
     border-bottom-right-radius: 19px;
     border-top-right-radius: 19px;
+    background-color: lightgray;
 }
 
 .header_search_icon{
