@@ -12,6 +12,7 @@ import Subscription from './Components/Pages/subscription';
 import Trending from './Components/Pages/trending';
 import WatchLater from './Components/Pages/watchLater';
 import CounterGame from './Components/Pages/CounterGame';
+import SwapElement from './Components/Pages/SwapElement';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
                 <Route path='/trending' element={<Trending />} />
                 <Route path='/watchLater' element={<WatchLater />} />
                 <Route path='/countergame' element={<CounterGame />}/>
+                <Route path='/swapElement' element={<SwapElement />}/>
             </Routes>
           </div>
         </Router>

@@ -30,3 +30,19 @@
     height: 3rem;
     border-radius: 10px;
 }
+
+.counterButton{
+    animation: bubble-Animation 0.4s ease-out;
+}
+
+@keyframes bubble-Animation{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.2);
+    }
+
+    100%{transform: scale(1);}
+}

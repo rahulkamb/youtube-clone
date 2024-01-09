@@ -4,10 +4,10 @@ import './sidebar.css'
 import Siderow from './siderow'
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFire } from "react-icons/bs";
-import { BiLike } from "react-icons/bi";
 import { GiStopwatch } from "react-icons/gi";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { MdOutlineSubscriptions ,MdOutlineWatchLater,MdVideoLibrary } from "react-icons/md";
+import { IoGameController } from "react-icons/io5";
+import { MdOutlineSubscriptions ,MdOutlineWatchLater,MdVideoLibrary , MdSwapHorizontalCircle } from "react-icons/md";
 
 
 
@@ -35,13 +35,13 @@ function sidebar({isSidebarOpen}) {
           <Siderow Icon={MdOutlineWatchLater} title='History'  isIconVisible={isSidebarOpen}/>
         </Link>
         <Link to='/countergame' className='text-link'>
-          <Siderow Icon={MdVideoLibrary} title='Counter Game' isIconVisible={isSidebarOpen} />
+          <Siderow Icon={IoGameController} title='Counter Game' isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/watchLater' className='text-link'>
           <Siderow Icon={GiStopwatch} title='Watch later' isIconVisible={isSidebarOpen} />
         </Link>
-        <Link to='/watchLater' className='text-link'>
-          <Siderow Icon={BiLike} title='Liked video'  isIconVisible={isSidebarOpen} />
+        <Link to='/swapElement' className='text-link'>
+          <Siderow Icon={MdSwapHorizontalCircle} title='Swap Element'  isIconVisible={isSidebarOpen} />
         </Link>
         <Link to='/watchLater' className='text-link'>
           <Siderow Icon={RiArrowDropDownLine} title='Show More' isIconVisible={isSidebarOpen} />
