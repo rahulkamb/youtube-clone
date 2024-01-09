@@ -19,7 +19,7 @@ function header({toggleSidebar}) {
 
   const sendRequest =()=> {
     if(inputSearch){
-      navigate('/');
+      navigate( `/search/${inputSearch}`);
     }
   };
 
@@ -33,12 +33,12 @@ function header({toggleSidebar}) {
       </div>
       <div className='header_moddle'>
         <input onChange={(e) =>setInputSearch(e.target.value)} value={inputSearch} type='text' placeholder='Search' className='header_search' required />
-        <Link to={`/search/${inputSearch}`}> 
-          <CiSearch className='header_search_icon' onClick={sendRequest}/>
-        </Link>
-          {/* <button className='btn-header' onClick={sendRequest}>
-            <CiSearch className='header_search_icon'/>
-          </button> */}
+        {/* <Link to={`/search/${inputSearch}`}> 
+          <CiSearch className='header_search_icon'  />
+        </Link> */}
+        <button className='btn-header' onClick={sendRequest} >
+          <CiSearch className='header_search_icon'/>
+        </button>
       </div>
       <div className='header_right'>
         <MdVideoCall className='header_icon' />
