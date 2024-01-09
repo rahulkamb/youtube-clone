@@ -16,14 +16,24 @@ function SwapElement() {
     }
 
     const handleDestinationValue =() =>{
-        setDestinationValue(sourceValue);
+        if(sourceValue){
+            setDestinationValue(sourceValue);
+            setDestinationValue(sourceValue);
+        }else{
+            alert('Source Input is already Empty ...! ');
+        }
+        
         setNewDestinationValue(sourceValue);
         setSourceValue('');
     }
 
     const handleNewSourceValue =() =>{
-        setSourceValue(newDestinationValue);
-        setSourceValue(newDestinationValue);
+        if(destinationValue){
+            setSourceValue(destinationValue);
+        }else{
+            alert('Source is already Empty ...! ');
+        }
+        // setSourceValue(newDestinationValue);
         setDestinationValue('');
     }
 
