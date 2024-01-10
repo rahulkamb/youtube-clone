@@ -39,7 +39,7 @@ function App() {
                 <Route path='/trending' element={<Trending />} />
                 <Route path='/watchLater' element={<WatchLater />} />
                 <Route path='/countergame' element={<CounterGame />}/>
-                <Route path='/swapElement' element={<SwapElement />}/>
+                <Route path='/swapElement' element={<SwapElement isContentOpen={isOpen} />}/>
             </Routes>
           </div>
         </Router>

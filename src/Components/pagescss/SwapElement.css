@@ -1,6 +1,15 @@
-.swapElement_content{
+.swapElement_contentActive{
     margin-top: 5rem;
     margin-left: 15rem;
+    padding: 0 1rem;
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+}
+
+.swapElement_contentNonActive{
+    margin-top: 5rem;
+    margin-left: 5rem;
     padding: 0 1rem;
     width: 100%;
     height: 40rem;

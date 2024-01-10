@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../pagescss/SwapElement.css'
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-function SwapElement() {
+function SwapElement({isContentOpen}) {
 
     const [isButtonClicked , setIsButtonClicked] = useState(false);
 
@@ -49,7 +49,7 @@ function SwapElement() {
     }
 
     return (
-        <div className='swapElement_content'>
+        <div className={`swapElement_content${isContentOpen?'Active':'NonActive'}`}>
             <div className='swap_content'>
                 <h1>Swap Elements</h1>
             </div>
