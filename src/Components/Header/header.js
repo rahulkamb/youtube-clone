@@ -3,6 +3,7 @@ import './header.css'
 import Youtube_logo from '../Images/youtube.png'
 import ProfileLogo from '../Images/profilePic.jpg'
 import { useNavigate as UseNavigate , Link } from 'react-router-dom'
+import Popup from './Popup'
 
 import { IoMenu } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
@@ -14,6 +15,11 @@ import { FaBell } from "react-icons/fa";
 function header({toggleSidebar}) {
 
   const [inputSearch , setInputSearch] = UseState('');
+  const [isOpen , setIsOpen] = UseState(false);
+
+  const generateDropDown = () =>{
+    setIsOpen(!isOpen);
+  }
 
   const navigate = UseNavigate();
 
@@ -44,7 +50,8 @@ function header({toggleSidebar}) {
         <MdVideoCall className='header_icon' />
         <CgMenuGridR className='header_icon' />
         <FaBell className='header_icon' />
-        <img src={ProfileLogo} alt='Profile_Pic' className='profile_icon' />
+        <img src={ProfileLogo} alt='Profile_Pic' className='profile_icon' onClick={generateDropDown} />
+        <Popup isOpen={isOpen} />
       </div>
     </div>
   )
